@@ -26,7 +26,7 @@ class PromiseSimple {
 			this.promiseChain.forEach((nextFunction) => {
 				storedValue = nextFunction(storedValue);
 			});
-		} catch {
+		} catch (error) {
 			this.promiseChain = [];
 			this.onReject(error);
 		}
@@ -39,9 +39,9 @@ class PromiseSimple {
 
 fakeApiBackend = () => {
 	const user = {
-		username: 'Harshwardhan';
-		favouriteNum: 42;
-		profile: '#';
+		username: 'Harshwardhan',
+		favouriteNum: 42,
+		profile: '#'
 	}
 
 	if(Math.random() > 0.05) {
