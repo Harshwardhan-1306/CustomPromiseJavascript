@@ -1,3 +1,4 @@
+This is basically a simplified reimplementation of JavaScript’s built-in Promise, showing how .then() and .catch() might work internally.
 You’ve probably seen something like this before:
 
 fetch('/user/1')
